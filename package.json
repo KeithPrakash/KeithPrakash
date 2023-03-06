@@ -36,7 +36,7 @@
 
     
 
-   "deploy": "gh-pages -d <output_directory>",
+   "deploy": "gh-pages -d",
 
  
 
