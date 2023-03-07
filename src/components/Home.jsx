@@ -18,12 +18,14 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 300,
+  width: 200,
   bgcolor: "background.paper",
   border: "none",
- 
+  borderTopRightRadius:25,
+  borderBottomRightRadius:25,
+  borderTopLeftRadius:25,
   boxShadow: 24,
-  p:4
+  p:3
 };
   
 const Home = () => {
@@ -74,8 +76,7 @@ const Home = () => {
               <div className="separate">
                 <div className="textOuter">
                   <div className="bigName">
-                    {/* <h1>Keith&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h1>
-                    <h1>&nbsp; &nbsp; Prakash</h1> */}
+                  
                     <h1>Hello, I'm Keith Prakash</h1>
                   </div>
                   <h3 style={{ paddingBottom: 30 }}>Javascript Developer</h3>
