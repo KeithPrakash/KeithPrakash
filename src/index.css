@@ -263,7 +263,10 @@ align-items: center;
   font-size: larger;
 }
 .modalIcon{
-color:rgb(14, 186, 14)
+  padding: 7px;
+color:rgb(14, 186, 14);
+
+
 }
 /* model */
 .imageOuter{
