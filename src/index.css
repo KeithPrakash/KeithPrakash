@@ -130,6 +130,7 @@
     /* border:1px solid red; */
     display: flex;
     /* padding-bottom: 100px; */
+ 
    
     
     
@@ -159,7 +160,10 @@
     color:white;
   
   }
-
+    .left-ribbon a:hover {
+      color:rgb(214, 214, 203);
+  
+    }
   .left-side{
     /* border:1px solid red; */
   height:100%;
@@ -196,13 +200,14 @@
   /* border:1px solid red; */
   
   line-height: 1.2;
-  color:#2c3e50
+  color:#2c3e50;
 }
 .letsTalkOuter{
 
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 .bigBall{
   display: flex; justify-content: center;
@@ -220,15 +225,47 @@
     justify-content: center;
       align-items: center;
  
-    height: 130px;
+    /* height: 130px;
     width: 130px;
-    background-color:rgb(255, 60, 0);
+    background-color:rgb(255, 60, 0); */
     color:#ffffff;
     border-radius: 100%;
-    position: absolute
-     
+    position: absolute;
+
     
 }
+.buttonText{
+  background-color: rgb(255, 60, 0);
+    color: #ffffff;
+    font-size: 20px;
+
+    height: 130px;
+    width: 130px;;
+    border-radius: 100%;
+
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      /* font-family: sans-serif; */
+        font-style: italic;
+        line-height: 1.2;
+    
+}
+
+/* model */
+
+.modalInf{
+display: flex;
+align-items: center;
+
+}
+.modalNum{
+  font-size: larger;
+}
+.modalIcon{
+color:rgb(14, 186, 14)
+}
+/* model */
 .imageOuter{
   height:auto;
   width:auto;
@@ -240,11 +277,16 @@
   /* padding:50px; */
   width:auto;
   border-radius: 100%;
+  margin:5px;
   
 }
 .image-border{
-  border: 5px solid rgb(255, 60, 0);;
+  /* border: 5px solid rgb(255, 60, 0); */
   border-radius: 100%;
+  background-color:rgb(255, 60, 0) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and(max-width:600px) {
    .imageOuter img{
@@ -255,6 +297,7 @@
    .letsTalkOuter {
       border:1px solid red;
     margin-bottom: 30px;
+   
 }
 
 }

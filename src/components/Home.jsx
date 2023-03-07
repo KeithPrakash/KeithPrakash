@@ -1,14 +1,35 @@
 
 import Keith from "../assets/keithWeb.png";
-import { Grid, Chip } from "@mui/material";
+import { Grid } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Nav from "./Nav";
-import { Instagram } from "@mui/icons-material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { useState } from "react";
+import { WhatsApp } from "@mui/icons-material";
 
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 300,
+  bgcolor: "background.paper",
+  border: "none",
+ 
+  boxShadow: 24,
+  p:4
+};
+  
 const Home = () => {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
   return (
     <div className="mainOuter">
       <Nav />
@@ -73,7 +94,36 @@ const Home = () => {
                 </div>
                 <div className="letsTalkOuter">
                   <div className="smallBall">
-                    <p>Lets Talk</p>
+                    <Button onClick={handleOpen}>
+                      <p className="buttonText">Lets Talk</p>
+                    </Button>
+                    <Modal
+                      open={open}
+                      onClose={handleClose}
+                      aria-labelledby="modal-modal-title"
+                      aria-describedby="modal-modal-description"
+                    >
+                      <Box sx={style}>
+                        <Typography
+                          id="modal-modal-title"
+                          variant="h6"
+                          component="h2"
+                        >
+                          Contact me
+                        </Typography>
+                        <Typography id="modal-modal-description" sx={{ mt: 1 }}>
+                          <div className="modalInf">
+                            <div className="modalIcon">
+                              <WhatsApp fontSize="large" />
+                            </div>
+                            <div className="modalNum">
+                            
+                              <span>0726770767</span>
+                            </div>
+                          </div>
+                        </Typography>
+                      </Box>
+                    </Modal>
                   </div>
                   <div className="bigBall"></div>
                 </div>

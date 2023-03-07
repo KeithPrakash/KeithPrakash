@@ -13,8 +13,7 @@ const Nav = () => {
               <h1><span style={{color:""}}>D</span>attebayoo!</h1>
             </div>
           </Grid>
-
-          <Grid item xs={12} sm={6}>
+           <Grid item xs={12} sm={6}>
             <div className="rightNav">
               <div className="topContact">
                 <div className="phoneOuter">
