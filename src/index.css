@@ -152,8 +152,12 @@
     justify-content:space-around;
    flex:0.20;
    padding:10;
-   color:white;
+   /* color:white; */
    flex-direction: column;
+  }
+  .left-ribbon a{
+    color:white;
+  
   }
 
   .left-side{

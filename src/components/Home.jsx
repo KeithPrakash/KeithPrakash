@@ -21,17 +21,33 @@ const Home = () => {
             <div className="left-side">
               <div className="left-ribbon">
                 <div className="mIcons">
-                  <GitHubIcon fontSize="large" />
+                  <a href="https://github.com/KeithPrakash" target="_blank">
+                    <GitHubIcon fontSize="large" />
+                  </a>
                 </div>
                 <div className="mIcons">
-                  <LinkedInIcon fontSize="large" />
+                  <a
+                    href="https://www.linkedin.com/in/keith-prakash-929369194/"
+                    target="_blank"
+                  >
+                    <LinkedInIcon fontSize="large" />
+                  </a>
                 </div>
                 <div className="mIcons">
-                  <InstagramIcon fontSize="large" />
+                  <a
+                    href="https://www.instagram.com/_keith_22__/"
+                    target="_blank"
+                  >
+                    <InstagramIcon fontSize="large" />
+                  </a>
                 </div>
-
                 <div className="mIcons">
-                  <FacebookIcon fontSize="large" />
+                  <a
+                    href="https://web.facebook.com/profile.php?id=100008778092396"
+                    target="_blank"
+                  >
+                    <FacebookIcon fontSize="large" />
+                  </a>
                 </div>
               </div>
               <div className="separate">
